@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>linkfire`s Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Кнопка переключения темы -->
+    <button id="theme-toggle" aria-label="Переключить тему">
+        🌙
+    </button>
+    <div id="animated-background"></div>
+
+    <!-- Навигация -->
+    <nav>
+        <div class="logo">linkfire`s Hub</div>
+    </nav>
+    <!-- Основной блок -->
+    <main>
+        <section id="projects" class="cards">
+            <div class="card">
+                <i class="fas fa-code card-icon"></i>
+                <h2>GamesReview-UA</h2>
+                <p>Рецензія ігр.</p>
+                <a href="https://linkfiremb.github.io/siteproject/" target="_blank">Переглянути проєкт</a>
+            </div>
+            <div class="card">
+                <i class="fas fa-paint-brush card-icon"></i>
+                <h2>Thost</h2>
+                <p>Хостинг для сайтів.</p>
+                <a href="https://linkfiremb.github.io/thost-site/" target="_blank">Переглянути проєкт</a>
+            </div>
+            <div class="card">
+                <i class="fas fa-chart-line card-icon"></i>
+                <h2>Subnautica</h2>
+                <p>Сайт про гру Subnautica.</p>
+                <a href="https://linkfiremb.github.io/subnautica-alterra/" target="_blank">Переглянути проєкт</a>
+            </div>
+            <div class="card">
+                <i class="fas fa-chart-line card-icon"></i>
+                <h2>AutoSell</h2>
+                <p>Продаж та купівля авто.</p>
+                <a href="https://linkfiremb.github.io/AutoSell-Project/" target="_blank">Переглянути проєкт</a>
+            </div>
+            <div class="card new-card">
+                <i class="fas fa-shield-alt card-icon"></i>
+                <div class="badge">Новий сайт</div>
+                <h2>SCP Foundation</h2>
+                <p>Сайт про вигадану таємну організацію</p>
+                <a href="https://linkfiremb.github.io/SCP-Foundation/index.html" target="_blank">Переглянути проєкт</a>
+            </div>
+        </section>
+
+        <!-- Рандомайзер сайтов -->
+        <section id="randomizer">
+            <h2>Куди мені сьогодні зайти?</h2>
+            <button id="randomizer-btn">Згенерувати сайт</button>
+            <div id="random-site">
+                <h3>Ваш випадковий сайт:</h3>
+                <p id="site-name">Натисніть кнопку, щоб перейти на сайт!</p>
+                <a id="site-link" href="" target="_blank">Перейти на сайт</a>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Кнопка "Наверх" -->
+    <button id="back-to-top" title="Наверх">⬆️</button>
+
+    <script src="scripts.js"></script>
+    <footer>
+        <p>Останнє оновлення: <span id="last-updated"></span></p>
+    </footer>    
+</body>
+</html>
