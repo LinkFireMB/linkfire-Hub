@@ -1,4 +1,3 @@
-/* Общие стили */
 * {
     margin: 0;
     padding: 0;
@@ -21,7 +20,6 @@ ul {
     list-style-type: none;
 }
 
-/* Навигация */
 nav {
     display: flex;
     justify-content: space-between;
@@ -40,9 +38,6 @@ nav .logo {
     color: #fff;
 }
 
-
-
-/* Карточки */
 .cards {
     display: flex;
     justify-content: center;
@@ -58,11 +53,9 @@ nav .logo {
     width: 300px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    border: 6px solid transparent; /* Увеличиваем толщину границы */
-    transition: transform 0.3s, box-shadow 0.3s, border 0.3s ease, border-color 0.3s ease; /* Плавная анимация для границы */
+    border: 6px solid transparent;
+    transition: transform 0.3s, box-shadow 0.3s, border 0.3s ease, border-color 0.3s ease;
 }
-
-
 
 .card:hover {
     transform: translateY(-10px);
@@ -88,7 +81,7 @@ nav .logo {
 
 .card a {
     color: #fff;
-    background: linear-gradient(120deg, #6a11cb, #2575fc); /* Стандартный градиент для обычной темы */
+    background: linear-gradient(120deg, #6a11cb, #2575fc);
     padding: 0.7rem 1.5rem;
     border-radius: 5px;
     font-weight: 600;
@@ -98,7 +91,6 @@ nav .logo {
     background: linear-gradient(120deg, #2575fc, #6a11cb);
 }
 
-/* Кнопка "Наверх" */
 #back-to-top {
     position: fixed;
     bottom: 20px;
@@ -121,7 +113,6 @@ nav .logo {
     background: #6a11cb;
 }
 
-
 .new-card {
     position: relative;
 }
@@ -140,47 +131,39 @@ nav .logo {
     animation: pulse 1.5s infinite;
 }
 
-/* Анимация для значка */
 @keyframes pulse {
     0%, 100% {
         transform: scale(1);
-        
     }
     50% {
         transform: scale(1.1);
-        
     }
 }
 
 .card:nth-child(1):hover {
-    border: 6px solid #4e5d3b; /* Яркий болотный зелёный */
-    box-shadow: 0 8px 15px rgba(78, 93, 59, 0.5); /* Тень болотного оттенка */
+    border: 6px solid #4e5d3b;
+    box-shadow: 0 8px 15px rgba(78, 93, 59, 0.5);
 }
 
-/* 2. Сайт Hosting (голубые цвета) */
 .card:nth-child(2):hover {
-    border: 6px solid #1abc9c; /* Бирюзовый */
-    box-shadow: 0 8px 15px rgba(26, 188, 156, 0.5); /* Тень бирюзового оттенка */
+    border: 6px solid #1abc9c;
+    box-shadow: 0 8px 15px rgba(26, 188, 156, 0.5);
 }
 
-/* 3. Сайт Subnautica (океанические цвета) */
 .card:nth-child(3):hover {
-    border: 6px solid #1976d2; /* Яркий океанический синий */
-    box-shadow: 0 8px 15px rgba(25, 118, 210, 0.5); /* Синяя тень */
+    border: 6px solid #1976d2;
+    box-shadow: 0 8px 15px rgba(25, 118, 210, 0.5);
 }
 
-/* 4. Сайт AutoSell (черно-желтые цвета) */
 .card:nth-child(4):hover {
-    border: 6px solid #f1c40f; /* Желтый */
-    box-shadow: 0 8px 15px rgba(241, 196, 15, 0.5); /* Желтая тень */
+    border: 6px solid #f1c40f;
+    box-shadow: 0 8px 15px rgba(241, 196, 15, 0.5);
 }
 
-/* 5. Сайт SCP Foundation (мистические темные цвета) */
 .card:nth-child(5):hover {
-    border: 6px solid #b10a0a; /* Глубокий темно-серый */
-    box-shadow: 0 8px 15px rgba(168, 0, 0, 0.5); /* Темная тень */
+    border: 6px solid #b10a0a;
+    box-shadow: 0 8px 15px rgba(168, 0, 0, 0.5);
 }
-
 
 #theme-toggle {
     position: fixed;
@@ -201,7 +184,6 @@ nav .logo {
     transform: scale(1.1);
 }
 
-/* Темная тема */
 body.dark-mode {
     background: #121212;
     color: #f1f1f1;
@@ -214,19 +196,15 @@ body.dark-mode {
 }
 
 body.dark-mode .card a {
-    background: linear-gradient(120deg, #ff4b2b, #d32f2f); /* Используем красный градиент с цветами #ff4b2b и #d32f2f */
+    background: linear-gradient(120deg, #ff4b2b, #d32f2f);
 }
 
 body.dark-mode .card a:hover {
-    background: linear-gradient(120deg, #d32f2f, #ff4b2b); /* Инвертированный градиент при наведении */
-}
-.card a:hover {
-    background: linear-gradient(120deg, #2575fc, #6a11cb);
+    background: linear-gradient(120deg, #d32f2f, #ff4b2b);
 }
 
-/* Изменим цвет текста в карточках при темной теме */
 body.dark-mode .card p {
-    color: #f1f1f1; /* Белый текст для описания */
+    color: #f1f1f1;
 }
 
 #theme-toggle.dark-mode {
@@ -240,29 +218,6 @@ body.dark-mode .card p {
 
 #back-to-top:hover {
     background: #444;
-}
-
-/* Для кнопки "Наверх" */
-#back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #2575fc;
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    font-size: 1.5rem;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-#back-to-top:hover {
-    background: #6a11cb;
 }
 
 #animated-background {
@@ -286,10 +241,9 @@ body.dark-mode .card p {
     }
 }
 
-/* Стили для текста "Последнее обновление" */
 footer {
-    background: linear-gradient(120deg, #2575fc, #6a11cb); /* Градиент для фона */
-    color: white; /* Белый текст */
+    background: linear-gradient(120deg, #2575fc, #6a11cb);
+    color: white;
     padding: 1rem;
     text-align: center;
     margin-top: 20px;
@@ -301,21 +255,19 @@ footer p {
 
 footer p span {
     font-weight: 600;
-    color: white; /* Белый цвет текста */
+    color: white;
 }
 
 body.dark-mode footer {
     background: #121212;
 }
 
-
-/* Темная тема */
 body.dark-mode footer p {
-    color: #f1f1f1; /* Белый цвет текста в темной теме */
+    color: #f1f1f1;
 }
 
 body.dark-mode footer p span {
-    color: #ff4b2b; /* Красный для выделения даты в темной теме */
+    color: #ff4b2b;
 }
 
 #randomizer {
@@ -324,7 +276,7 @@ body.dark-mode footer p span {
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-    background-color: #fff; /* Белый фон */
+    background-color: #fff;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -332,14 +284,14 @@ body.dark-mode footer p span {
 
 #randomizer h2 {
     font-size: 1.5rem;
-    color: #333; /* Черный текст */
+    color: #333;
     margin-bottom: 1.5rem;
     font-weight: bold;
 }
 
 #randomizer-btn {
     padding: 1rem 2rem;
-    background: linear-gradient(120deg, #6a11cb, #2575fc); /* Градиент для кнопки в светлой теме */
+    background: linear-gradient(120deg, #6a11cb, #2575fc);
     border: none;
     color: #fff;
     font-size: 1.2rem;
@@ -355,20 +307,19 @@ body.dark-mode footer p span {
 }
 
 #randomizer-btn:hover {
-    background: linear-gradient(120deg, #2575fc, #6a11cb); /* Перевернутый градиент при наведении */
+    background: linear-gradient(120deg, #2575fc, #6a11cb);
 }
 
 #random-site {
     font-size: 1.1rem;
-    color: #333; /* Черный текст */
+    color: #333;
     margin-top: 1rem;
 }
-
 
 #site-link {
     display: inline-block;
     color: #fff;
-    background: linear-gradient(120deg, #6a11cb, #2575fc); /* Градиент для ссылки в светлой теме */
+    background: linear-gradient(120deg, #6a11cb, #2575fc);
     padding: 0.7rem 1.5rem;
     border-radius: 5px;
     font-weight: 600;
@@ -376,39 +327,31 @@ body.dark-mode footer p span {
 }
 
 #site-link:hover {
-    background: linear-gradient(120deg, #2575fc, #6a11cb); /* Перевернутый градиент при наведении */
-}
-
-/* Темная тема */
-body.dark-mode {
-    background: #121212; /* Темный фон */
-    color: #f1f1f1; /* Белый текст */
+    background: linear-gradient(120deg, #2575fc, #6a11cb);
 }
 
 body.dark-mode #randomizer {
-    background-color: #333; /* Темный фон для блока */
+    background-color: #333;
 }
 
 body.dark-mode #randomizer h2,
 body.dark-mode #random-site,
 body.dark-mode #site-name {
-    color: #f1f1f1; /* Белый текст в темной теме */
+    color: #f1f1f1;
 }
 
-/* Кнопка с красным градиентом для темной темы */
 body.dark-mode #randomizer-btn {
-    background: linear-gradient(120deg, #ff4b2b, #d32f2f); /* Красный градиент */
+    background: linear-gradient(120deg, #ff4b2b, #d32f2f);
 }
 
 body.dark-mode #randomizer-btn:hover {
-    background: linear-gradient(120deg, #d32f2f, #ff4b2b); /* Перевернутый градиент при наведении */
+    background: linear-gradient(120deg, #d32f2f, #ff4b2b);
 }
 
-/* Ссылка с красным градиентом в темной теме */
 body.dark-mode #site-link {
-    background: linear-gradient(120deg, #ff4b2b, #d32f2f); /* Красный градиент */
+    background: linear-gradient(120deg, #ff4b2b, #d32f2f);
 }
 
 body.dark-mode #site-link:hover {
-    background: linear-gradient(120deg, #d32f2f, #ff4b2b); /* Перевернутый градиент при наведении */
+    background: linear-gradient(120deg, #d32f2f, #ff4b2b);
 }
